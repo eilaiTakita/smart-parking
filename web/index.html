@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>מערכת ניהול חניון חלליות - Galactic Parking</title>
+    <style>
+        body {
+            background-color: #0b0f19;
+            color: #00ffcc;
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff007f;
+            text-shadow: 0 0 10px #ff007f;
+        }
+        .dashboard {
+            border: 2px dashed #00ffcc;
+            padding: 20px;
+            margin: 20px auto;
+            width: 60%;
+            background-color: #111827;
+            box-shadow: 0 0 20px rgba(0, 255, 204, 0.2);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #00ffcc;
+            margin-top: 10px;
+        }
+        .status {
+            font-size: 1.2em;
+            color: #38bdf8;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🛸 Galactic Parking Terminal - מפרץ חנייה מס' 7</h1>
+    <p>מערכת מעקב לוחיות רישוי ואבטחה בין-גלקטית</p>
+
+    <div class="dashboard">
+        <h2>זיהוי חללית נכנסת אחרונה:</h2>
+        <div class="status">סטטוס: חניון מאובטח | מורשה נחיתה</div>
+        <!-- התמונה נמשכת ישירות משרת ה-Storage של Apache -->
+        <img src="http://localhost:8081/images/ship1.jpg" alt="צילום מצלמת IoT - חללית נכנסת">
+    </div>
+
+</body>
+</html>

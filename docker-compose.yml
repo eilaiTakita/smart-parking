@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  web-dashboard:
+    build: ./web
+    ports:
+      - "8080:80"
+    restart: always
+
+  storage-server:
+    image: httpd:latest
+    ports:
+      - "8081:80"
+    volumes:
+      - ./storage/images:/usr/local/apache2/htdocs/images
+    restart: always
